@@ -1,12 +1,6 @@
-/* ========================================
-   KEEM CAPITAL - COMPLETE STYLESHEET
-   Modern, Responsive, Offline-First Design
-   ======================================== */
 
-/* Import Google Fonts (works offline after first load) */
 @import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap');
 
-/* CSS Variables */
 :root {
     --primary-dark: #0a2b3e;
     --primary: #0f5c6b;
@@ -51,7 +45,7 @@ body {
     padding: 0 1.5rem;
 }
 
-/* Typography */
+
 h1, h2, h3, h4 {
     font-weight: 700;
     line-height: 1.2;
@@ -89,7 +83,6 @@ h4 { font-size: 1.125rem; margin-bottom: 0.5rem; }
     text-align: center;
 }
 
-/* Header & Navigation */
 header {
     background: var(--primary-dark);
     position: sticky;
@@ -167,7 +160,7 @@ header {
     transform: scale(1.1);
 }
 
-/* Buttons */
+
 .btn {
     display: inline-flex;
     align-items: center;
@@ -205,7 +198,7 @@ header {
     font-size: 0.875rem;
 }
 
-/* Hero Section */
+
 .hero {
     background: linear-gradient(135deg, var(--bg-light) 0%, #e6f0f5 100%);
     padding: 5rem 0;
@@ -251,7 +244,7 @@ header {
     flex-wrap: wrap;
 }
 
-/* Cards Grid */
+
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -288,7 +281,7 @@ header {
     font-size: 0.9375rem;
 }
 
-/* Features Grid */
+
 .features-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -306,7 +299,7 @@ header {
     gap: 0.75rem;
 }
 
-/* Video Grid */
+
 .video-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -350,7 +343,7 @@ header {
     color: var(--text-gray);
 }
 
-/* Blog Posts */
+
 .blog-list {
     margin: 2rem 0;
 }
@@ -407,7 +400,6 @@ header {
     border-top: 1px solid var(--border);
 }
 
-/* Deriv Basics Page */
 .toc {
     background: var(--bg-light);
     padding: 1.5rem 2rem;
@@ -501,7 +493,7 @@ header {
     font-size: 1.125rem;
 }
 
-/* Mentorship Page */
+
 .mentorship-grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -619,7 +611,7 @@ header {
     cursor: pointer;
 }
 
-/* Community Page */
+
 .community-banner {
     background: linear-gradient(135deg, var(--primary-dark), var(--primary));
     color: white;
@@ -687,7 +679,7 @@ header {
     margin: 0.75rem 0;
 }
 
-/* Contact Page */
+
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -757,7 +749,7 @@ header {
     margin-top: 1rem;
 }
 
-/* Alerts */
+
 .alert {
     padding: 1rem 1.25rem;
     border-radius: var(--radius-sm);
@@ -782,7 +774,7 @@ header {
     border-left: 4px solid var(--success);
 }
 
-/* CTA Box */
+
 .cta-box {
     text-align: center;
     background: linear-gradient(135deg, var(--primary-dark), var(--primary));
@@ -814,7 +806,7 @@ header {
     color: var(--primary);
 }
 
-/* Disclaimer Page */
+
 .legal-page {
     max-width: 900px;
 }
@@ -845,7 +837,7 @@ header {
     margin-top: 2rem;
 }
 
-/* Footer */
+
 footer {
     background: var(--primary-dark);
     color: var(--text-light);
@@ -895,13 +887,13 @@ footer {
     margin-top: 0.5rem;
 }
 
-/* Background variations */
+
 .bg-light {
     background: var(--bg-light);
     padding: 3rem 0;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .container {
         padding: 0 1rem;
@@ -971,7 +963,7 @@ footer {
     }
 }
 
-/* Animation Classes */
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
