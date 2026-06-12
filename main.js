@@ -1,9 +1,4 @@
-/**
- * KEEM CAPITAL - MAIN JAVASCRIPT
- * Handles navigation, interactivity, and dynamic content
- */
 
-// Mobile Menu Toggle
 document.addEventListener('DOMContentLoaded', function() {
     const menuToggle = document.querySelector('.menu-toggle');
     const navLinks = document.querySelector('.nav-links');
@@ -14,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Close menu when clicking a link (mobile)
+   
     const navItems = document.querySelectorAll('.nav-links a');
     navItems.forEach(item => {
         item.addEventListener('click', () => {
@@ -24,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Active page highlighting
+   
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
     navItems.forEach(link => {
         const href = link.getAttribute('href');
@@ -33,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Read More functionality for blog posts
+    
     const readMoreBtns = document.querySelectorAll('.read-more');
     readMoreBtns.forEach(btn => {
         btn.addEventListener('click', function() {
@@ -50,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Analysis filters
+    
     const filterBtns = document.querySelectorAll('.filter-btn');
     const blogPosts = document.querySelectorAll('.blog-post');
     
@@ -58,11 +53,11 @@ document.addEventListener('DOMContentLoaded', function() {
         btn.addEventListener('click', function() {
             const filter = this.getAttribute('data-filter');
             
-            // Update active button
+          
             filterBtns.forEach(b => b.classList.remove('active'));
             this.classList.add('active');
             
-            // Filter posts
+            
             blogPosts.forEach(post => {
                 if (filter === 'all' || post.getAttribute('data-category') === filter) {
                     post.style.display = 'block';
@@ -73,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Smooth scroll for anchor links
+    \
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             const target = document.querySelector(this.getAttribute('href'));
@@ -84,19 +79,18 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Add year to footer
+    
     const yearElement = document.querySelector('.current-year');
     if (yearElement) {
         yearElement.textContent = new Date().getFullYear();
     }
 });
 
-// Form submission handling (if using Formspree)
+
 const contactForm = document.querySelector('.contact-form-box form');
 if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
-        // Form will submit normally to Formspree
-        // Add loading state if desired
+      
         const submitBtn = this.querySelector('button[type="submit"]');
         if (submitBtn) {
             submitBtn.textContent = 'Sending...';
@@ -105,7 +99,7 @@ if (contactForm) {
     });
 }
 
-// Lazy loading for TikTok iframes
+
 const iframes = document.querySelectorAll('iframe');
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -127,7 +121,7 @@ iframes.forEach(iframe => {
     }
 });
 
-// Scroll reveal animation
+
 const revealElements = document.querySelectorAll('.card, .video-card, .blog-post, .feature');
 const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -146,4 +140,4 @@ revealElements.forEach(el => {
     revealObserver.observe(el);
 });
 
-console.log('Keem Capital website loaded successfully!');
+console.log('Deriv Capital website loaded successfully!');
